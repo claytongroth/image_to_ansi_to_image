@@ -13,5 +13,8 @@ node textANSItoHTML.js $NEW_FILE_NAME
 
 ./HTML_to_image.sh ${NEW_NAME}_HTML.html ../../../static/img/${NEW_NAME}_IMG.png 
 
+
+# TODO: Convert to jpg at the end.
+
 rm ${NEW_NAME}_HTML.html
 rm $NEW_FILE_NAME
