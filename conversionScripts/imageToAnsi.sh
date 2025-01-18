@@ -1,6 +1,6 @@
 NUMBER=200
 ORIGINAL_IMG=$1
-ORIGINAL_IMG_FULL_PATH="./$ORIGINAL_IMG.jpeg" #"../../../static/img/$ORIGINAL_IMG.jpeg"
+ORIGINAL_IMG_FULL_PATH="../../../static/img/$ORIGINAL_IMG.jpeg"
 NEW_NAME="${ORIGINAL_IMG}_${NUMBER}"
 NEW_FILE_NAME="$NEW_NAME.txt"
 STYLE=256
@@ -11,4 +11,7 @@ STYLE=256
 node textANSItoHTML.js $NEW_FILE_NAME
 
 
-./HTML_to_image.sh ${NEW_NAME}_HTML.html ${NEW_NAME}_IMG.png 
+./HTML_to_image.sh ${NEW_NAME}_HTML.html ../../../static/img/${NEW_NAME}_IMG.png 
+
+rm ${NEW_NAME}_HTML.html
+rm $NEW_FILE_NAME
