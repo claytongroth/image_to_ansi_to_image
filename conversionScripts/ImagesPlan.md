@@ -6,3 +6,4 @@ https://github.com/radare/tiv
 - Flicker effect?
 - Setup pipeline for conversion
     - Dockerize this
+    
