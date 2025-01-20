@@ -9,7 +9,7 @@ https://github.com/radare/tiv
 - Commit as standalone repo
 - Working Flow
     - Existing image to ANSI code 
-        - `imageToAnsi.sh`
+        - `convert_one.sh`
     - ANSI to HTML 
         - `textANSItoHTML.js` (not working)
         - print out the HTML from the js file with ANSI (with no weird borders.)
