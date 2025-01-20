@@ -1,6 +1,11 @@
-# Compile
+# Use with [TIV](https://github.com/radare/tiv) already compiled
 
-https://github.com/radare/tiv
+```sh
+./convert_one.sh some_cool_pic.jpeg ../../../static/img/output.png
+```
+
+
+# Compile TIV
 
 ```sh
 make
@@ -11,6 +16,5 @@ export PKG_CONFIG_PATH="/usr/local/opt/jpeg/lib/pkgconfig"
 gcc stiv-jpeg.c -o stiv-jpeg -I/usr/local/opt/jpeg/include -L/usr/local/opt/jpeg/lib -ljpeg
 
 ./stiv-jpeg img/Constellation_1.jpeg 50 256
-
 
 ```
